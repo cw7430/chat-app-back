@@ -1,7 +1,7 @@
 import buildApp from './app';
-import { appConfig } from './common/configs';
+import { envConfig } from './common/configs';
 
-const PORT = appConfig.PORT;
+const PORT = envConfig.APP.PORT;
 
 const main = async () => {
   const app = await buildApp();
